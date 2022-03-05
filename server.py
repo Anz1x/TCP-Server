@@ -10,6 +10,11 @@
 
 import socket
 import json
+import logging
+import time
+
+logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(message)s", 
+                    datefmt=time.strftime("%d/%m/%Y:%H:%M:%S"))
 
 # Socket object
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -24,7 +29,7 @@ with open("settings.json", "r") as file:
 try:
     server_socket.bind((host, port))
 except:
-    print("Failed to bind")
+    logging.info("Failed to bind")
 
 # Starting the listener and the amount of devices it can connect to at the same time
 server_socket.listen(5)
@@ -34,14 +39,14 @@ while True:
     try:
         client_socket,address = server_socket.accept()
 
-        print("Established a connection with %s" % str(address))
+        logging.info("Established a connection with %s" % str(address))
     except:
-        print("Connection failed")
+        logging.info("Connection failed")
     
     try:
         # Encoding the message
         client_socket.send(message.encode("ascii"))
     except:
-        print("\nMessaged failed to deliver to the client")
+        logging.info("\nMessaged failed to deliver to the client")
 
     client_socket.close()
