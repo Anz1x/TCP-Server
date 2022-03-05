@@ -47,6 +47,6 @@ while True:
         # Encoding the message
         client_socket.send(message.encode("ascii"))
     except:
-        logging.info("\nMessaged failed to deliver to the client")
+        logging.info("Messaged failed to deliver to the client")
 
     client_socket.close()
