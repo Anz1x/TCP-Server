@@ -1,0 +1,5 @@
+{
+    "host": "192.168.1.254",
+    "port": 1337,
+    "message": "You are connected to the server"
+}
