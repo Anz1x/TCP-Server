@@ -1,4 +1,5 @@
-#A TCP client coded with python
+#A TCP client coded with python 3.10.2.
+# IF YOU ARE RUNNING SERVER.PY ON THIS HOST THEN RUN THIS ON A DIFFERENT MACHINE SINCE LIKE A VM OR AN ANOTHER DEVICE
 
 #████████╗░█████╗░██████╗░  ░█████╗░██╗░░░░░██╗███████╗███╗░░██╗████████╗
 #╚══██╔══╝██╔══██╗██╔══██╗  ██╔══██╗██║░░░░░██║██╔════╝████╗░██║╚══██╔══╝
