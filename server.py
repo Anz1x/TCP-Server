@@ -1,5 +1,4 @@
-#A TCP server coded with Python
-# IF YOU ARE RUNNING SERVER.PY ON THIS HOST THEN RUN THIS ON A DIFFERENT MACHINE SINCE THIS IS THE CLIENT LIKE A VM OR ANOTHER DEVICE
+#A TCP server coded with Python 3.10.2.
 
 #████████╗░█████╗░██████╗░  ░██████╗███████╗██████╗░██╗░░░██╗███████╗██████╗░
 #╚══██╔══╝██╔══██╗██╔══██╗  ██╔════╝██╔════╝██╔══██╗██║░░░██║██╔════╝██╔══██╗
