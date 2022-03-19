@@ -11,6 +11,9 @@ import socket
 import json
 import logging
 import time
+import os
+
+os.system("cls ; clear")
 
 logging.basicConfig(level=logging.INFO, format="[%(asctime)s] %(message)s", 
                     datefmt=time.strftime("%d/%m/%Y:%H:%M:%S"))
