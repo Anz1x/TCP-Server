@@ -10,6 +10,9 @@
 
 import socket
 import json
+import os
+
+os.system("cls ; clear")
 
 # Socket object
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
